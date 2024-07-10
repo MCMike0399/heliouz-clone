@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import './AboutMe.css'; // Asegúrate de crear este archivo de estilos
-import fotoPerfil from '../assets/profile.png'; 
+import './index.css'; // Asegúrate de crear este archivo de estilos
+import fotoPerfil from '../../assets/profile.png'; 
 
 const AboutMe: React.FC = () => {
   useEffect(() => {
