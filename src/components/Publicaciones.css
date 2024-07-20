@@ -1,0 +1,35 @@
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  h3 {
+    color: #0D3251;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  a {
+    color: #0D3251;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
