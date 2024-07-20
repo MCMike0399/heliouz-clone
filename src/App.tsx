@@ -1,28 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import Projects from './components/Projects';
-import Publicaciones from './components/Publicaciones';
-import Contacto from './components/Contacto.tsx';
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Content from "./components/Content";
 
-const App: React.FC = () => {
-  return (
-    <Router>
+export default function App() {
+   const [tabValue, setTabValue] = useState<number>(0);
+   return (
       <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/pubs" element={<Publicaciones />} />
-          <Route path="/contacto" element={<Contacto />} />
-        </Routes>
-        <Footer />
+         <Header tabValue={tabValue} setTabValue={setTabValue} />
+         <Content tabValue={tabValue} />
       </div>
-    </Router>
-  );
+   );
 }
-
-export default App;
