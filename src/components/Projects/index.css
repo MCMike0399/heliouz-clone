@@ -1,0 +1,85 @@
+.projects-container {
+  text-align: center;
+  margin: 0 auto; /* Centra el contenedor principal */
+  padding: 20px; /* Añade padding alrededor del contenedor */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Muestra 3 columnas fijas */
+  gap: 16px;
+  justify-items: center;
+  max-width: 800px; /* Limita el ancho máximo para centrar mejor */
+  margin: 0 auto; /* Centra la galería en la página */
+}
+
+.projectTile {
+  background-color: #004f6e;
+  color: #ffffff; /* Texto blanco */
+  border-radius: 8px;
+  width: 200px; /* Ajusta el ancho */
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.projectTile a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectContent {
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.subtitle {
+  display: none;
+  color: white; 
+}
+
+.projectTile:hover .title {
+  display: none;
+}
+
+.projectTile:hover .subtitle {
+  display: block;
+}
+
+/* Estilos adicionales para el botón "Volver a la galería" */
+.back-button {
+  margin-top: 20px; /* Espacio encima del botón */
+  padding: 10px 20px; /* Tamaño del botón */
+  background-color: #004f6e; /* Mismo color que los cuadros */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #003d56; /* Color más oscuro al pasar el mouse */
+}
+
+.project-detail {
+  max-width: 700px; /* Limita el ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  line-height: 1.5; /* Mejora la legibilidad del texto */
+  padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.project-detail p {
+  margin-bottom: 15px; /* Espaciado entre los párrafos */
+}

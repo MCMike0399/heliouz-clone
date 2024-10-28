@@ -1,0 +1,71 @@
+/* Botones sociales */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Aumenta el tamaño del círculo */
+  height: 50px; /* Aumenta el tamaño del círculo */
+  border-radius: 50%; /* Redondear completamente */
+  background-color: transparent; /* Fondo por defecto */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* Estilo del icono */
+.social-button svg {
+  width: 24px; /* Aumenta el tamaño del icono */
+  height: 24px; /* Aumenta el tamaño del icono */
+}
+
+/* Efecto hover en el círculo */
+.social-button:hover {
+  transform: scale(1.1); /* Agranda un poco el círculo al pasar el cursor */
+}
+
+/* Colores de fondo al hacer hover */
+.social-button.twitter {
+  background-color: #1da1f2; /* Color predeterminado de Twitter */
+}
+
+.social-button.twitter:hover {
+  background-color: #1a91da; /* Color de hover para Twitter */
+}
+
+.social-button.tiktok {
+  background-color: #000; /* Color predeterminado de TikTok */
+}
+
+.social-button.tiktok:hover {
+  background-color: #333; /* Color de hover para TikTok */
+}
+
+.social-button.instagram {
+  background-color: #e4405f; /* Color predeterminado de Instagram */
+}
+
+.social-button.instagram:hover {
+  background-color: #d73656; /* Color de hover para Instagram */
+}
+
+.social-button.email {
+  background-color: #1da1f2; /* Azul claro */
+}
+
+.social-button.email:hover {
+  background-color: #1a91da; /* Azul más oscuro al hacer hover */
+}
+/* Estilo del texto de copyright */
+.footer p {
+  font-size: 12px;
+  color: #6c757d; /* Color del texto de copyright */
+  margin-top: 10px;
+  text-align: center;
+}

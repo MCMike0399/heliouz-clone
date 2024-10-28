@@ -1,22 +1,47 @@
 .about-me-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #f9f9f9;
-  }
-  
-  .about-me-content {
-    text-align: left; /* Ajusta el texto a la izquierda */
-    margin-left: 20px; /* Ajusta el margen izquierdo para separarlo del borde */
-  }
-  
-  .profile {
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  align-items: center;
+  padding: 20px;
+  border: none; /* Elimina el borde */
+  border-radius: 0; /* Sin bordes redondeados */
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: transparent; /* Fondo transparente */
+}
+
+.about-me-content {
+  text-align: left; /* Ajusta el texto a la izquierda */
+  margin-left: 20px; /* Ajusta el margen izquierdo */
+  color: #333; /* Color del texto */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.profile {
+  border-radius: 50%;
+  margin-left: auto; /* Alinea la imagen a la derecha */
+  margin-right: 0; /* Elimina el margen derecho */
+  max-width: 200px; /* Ajusta el tamaño máximo */
+  max-height: 200px; /* Asegura que la imagen no sea demasiado grande */
+  object-fit: cover; /* Mantén el aspecto de la imagen */
+}
+
+blockquote {
+  font-style: italic;
+  color: #555; /* Un tono más oscuro para diferenciarlo */
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a {
+  color: #0D3251; /* Color azul oscuro similar al original */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Negrita para los enlaces */
+}
+
+a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}

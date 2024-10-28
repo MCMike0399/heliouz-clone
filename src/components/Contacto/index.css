@@ -1,0 +1,21 @@
+.contacto-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 20px;
+  gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.plane-image {
+  width: 200px;
+}
+
+.contacto-content {
+  max-width: 600px;
+}
+
+.email-image {
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

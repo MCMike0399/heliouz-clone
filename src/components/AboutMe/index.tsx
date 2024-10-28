@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './index.css'; // Asegúrate de crear este archivo de estilos
+import './index.css'; 
 import fotoPerfil from '../../assets/profile.png'; 
 
 const AboutMe: React.FC = () => {
@@ -15,7 +15,7 @@ const AboutMe: React.FC = () => {
   return (
     <main>
       <article className="about-me-container">
-        <img className="profile right" width="33.33%" src={fotoPerfil} alt="Foto de perfil" />
+        
 
         <div className="about-me-content">
           <p>Ingeniero mecánico y maestro en ciencia e ingeniería de materiales por la UNAM. Mi especialidad son los materiales metálicos, particularmente los aceros avanzados.  Me gustan los materiales, la ingeniería, los mapas y resolver problemas.</p>
@@ -28,6 +28,8 @@ const AboutMe: React.FC = () => {
 
           <p>En mis ratos libres y no tan libres también programo. He hecho <a href="https://twitter.com/BigakuSan" target="_blank" rel="noopener noreferrer">bots de twitter</a>, <a href="/projects/qpqt/" target="_blank" rel="noopener noreferrer">aplicaciones para diseñar aleaciones de aceros avanzados</a> y <a href="/projects/estumex/" target="_blank" rel="noopener noreferrer">muchos mapas</a>.</p>
         </div>
+
+        <img className="profile right" src={fotoPerfil} alt="Foto de perfil" />
       </article>
     </main>
   );
